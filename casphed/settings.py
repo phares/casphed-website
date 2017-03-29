@@ -189,15 +189,26 @@ CMS_PLACEHOLDER_CONF = {}
 
 DATABASES = {
     'default': {
-        'CONN_MAX_AGE': 0,
-        'ENGINE': 'django.db.backends.sqlite3',
-        'HOST': 'localhost',
-        'NAME': 'project.db',
-        'PASSWORD': '',
-        'PORT': '',
-        'USER': ''
+        'ENGINE': 'django.db.backends.postgresql_psycopg2',
+        'HOST': 'ec2-54-243-124-240.compute-1.amazonaws.com',
+        'NAME': 'dei7d4i9jl0bof',
+        'PASSWORD': '2e011f584983b9d40cddefa6b52f4d59eb995c9bae85a68bc59bc2fa7819ca70',
+        'PORT': '5432',
+        'USER': 'ljwbeeeanzarow',
     }
 }
+
+# DATABASES = {
+#     'default': {
+#         'CONN_MAX_AGE': 0,
+#         'ENGINE': 'django.db.backends.sqlite3',
+#         'HOST': 'localhost',
+#         'NAME': 'project.db',
+#         'PASSWORD': '',
+#         'PORT': '',
+#         'USER': ''
+#     }
+# }
 
 MIGRATION_MODULES = {
     
